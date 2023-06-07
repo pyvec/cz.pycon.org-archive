@@ -18,11 +18,15 @@ for example
 $ ./backup.sh 2022
 ```
 
-and commit to this repository.
+### Remove `index.html` from file content
+
+### Commit to this repository
 
 ### Add the mirror to the website
 
 Change the [nginx config](https://github.com/pyvec/cz.pycon.org/blob/main/docker/nginx/cz.pycon.org.conf#L60) in the cz.pycon.org repository.
+
+### Deploy cz.pycon.org
 
 ## License
 
