@@ -1,0 +1,32 @@
+.idea
+.DS_Store
+.ipynb_checkpoints
+__pycache__/
+*.pyc
+*.egg-info
+.eggs/
+.gitattributes
+junit*
+.tox
+dist
+build
+pep8.log
+flake8.log
+coverage.xml
+.coverage
+*,cover
+/.cache/
+env/
+venv/
+.env
+.ropeproject
+
+# sqlite dbs
+*.sqlite3
+
+pyconcz/settings/local.py
+
+# Node packages, tmp files
+node_modules/
+npm-debug.log
+tmp/
