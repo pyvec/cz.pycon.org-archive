@@ -6,7 +6,7 @@ It is deployed automatically with the [current website](https://cz.pycon.org).
 
 ## Adding a new version
 
-### Create mirror
+### 1. Create mirror
 
 ```shell
 $ ./backup.sh <year>
@@ -18,15 +18,15 @@ for example
 $ ./backup.sh 2022
 ```
 
-### Remove `index.html` from file content
+### 2. Commit to this repository
 
-### Commit to this repository
-
-### Add the mirror to the website
+### 3. Add the mirror to the cz.pycon.org nginx configuration
 
 Change the [nginx config](https://github.com/pyvec/cz.pycon.org/blob/main/docker/nginx/cz.pycon.org.conf#L60) in the cz.pycon.org repository.
 
-### Deploy cz.pycon.org
+### 4. Deploy cz.pycon.org
+
+Which should happen by pushing to main branch but check current documentation [in the repository](https://github.com/pyvec/cz.pycon.org).
 
 ## License
 

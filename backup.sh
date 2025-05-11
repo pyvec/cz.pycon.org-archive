@@ -19,3 +19,6 @@ wget \
     -nH --cut-dirs 1 \
     -P "$1" \
     https://cz.pycon.org/"$1"/
+
+# Remove index.html from links in html
+find "$1" -name "*.html" -type f -exec sed -i 's|href="\([^"]*\)/index\.html"|href="\1/"|g; s|href="\([^:"]*\)/index\.html"|href="\1/"|g' {} \;
